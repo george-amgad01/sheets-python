@@ -1,0 +1,16 @@
+class Car :
+    def __init__ (self,brand,model,year) :
+        self.brand = brand
+        self.model = model
+        self.year = year
+    
+    def show (self) :
+        print (self.brand , self.model , self.year)
+
+c1 = Car("Tyata","Coralla",2022)
+c2 = Car("Hyundai","Elantra",2015)
+c3 = Car ("Marcedes","G-class",2019)
+
+c1.show()
+c2.show()
+c3.show()
