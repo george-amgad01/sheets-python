@@ -1,0 +1,36 @@
+class University :
+    university_name = 'Sphinx'
+    @classmethod 
+
+    def change_university_name (cls,new_name) :
+        cls.university_name = new_name
+
+    def __init__ (self,name,id,gpa) :
+        self.name = name
+        self.id = id
+        self.__gpa = gpa 
+    
+    def get_gpa (self) :
+        return self.__gpa 
+    
+    def set_gpa (self,new_gpa) :
+        self.__gpa = new_gpa 
+    
+    def display_info (self) :
+        return (self.name , self.id , self.get_gpa())
+    
+
+s1 = University('Ahmed' , '1405', 3.7)
+s2 = University ('alaa' , '7050' , 3.8)
+
+print(s1.university_name)
+s1.change_university_name('MSI')
+print(s1.university_name)
+print(s2.university_name)
+
+print(s1.display_info())
+print(s2.display_info())
+
+print (s1.get_gpa())
+s1.set_gpa(4.0)
+print (s1.get_gpa())
