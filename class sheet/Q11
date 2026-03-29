@@ -1,0 +1,16 @@
+class Account :
+    def __init__ (self,balance):
+        self.__balance = balance
+
+    def get_balance (self) :
+        return self.__balance
+
+    def set_balance (self,new_balance) :
+        self.__balance = new_balance
+
+
+a1= Account(5000)
+#print(a1.__balance) # Erorr
+print(a1.get_balance())
+a1.set_balance(8000)
+print(a1.get_balance())
