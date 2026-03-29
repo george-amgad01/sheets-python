@@ -1,0 +1,10 @@
+class Laptop :
+    brand = 'Lenovo'
+
+l1 = Laptop()
+l2 = Laptop ()
+
+l1.brand = 'hp'
+
+print(l1.brand)
+print(l2.brand)
