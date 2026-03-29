@@ -1,0 +1,17 @@
+class Product :
+    discount = 10
+
+    def __init__ (self,price) :
+        self.price = price
+
+    def price_after_discount(self) :
+        self.price = self.price - ((Product.discount * self.price) // 100)
+
+
+p1 = Product (100)
+p2 = Product (200)
+
+print(p1.price)
+p1.price_after_discount()
+print(p1.price)
+print(p2.price)
