@@ -1,0 +1,15 @@
+class Employee :
+    company = 'TechCorp'
+
+    def __init__ (self,name,salary) :
+        self.name = name
+        self.salary = salary
+
+    def show (self) :
+        print(f'Employee name : {self.name} --- salary : {self.salary} --- company name : {Employee.company}')
+
+e1 = Employee('Ahmed',12000)
+e2 = Employee('Abbas',10000)
+
+e1.show()
+e2.show()
